@@ -1,5 +1,7 @@
 # EventsTimeline
 
+This is a test project with events timeline indicator.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
 
 ## Development server
