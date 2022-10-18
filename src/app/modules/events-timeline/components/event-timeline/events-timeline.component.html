@@ -1,0 +1,15 @@
+<div class="events-timeline-wrapper">
+  <div class="events-timeline-container">
+    <ng-container *ngFor="let event of eventsData.events; let first = first; let last = last">
+      <app-event-chunk
+        [event]="event"
+        [eventsEndMilliseconds]="dateEndsMilliseconds"
+        [eventsStartMilliseconds]="dateStartsMilliseconds"
+        [eventsTimelineLengthMilliseconds]="timelineLengthMilliseconds"
+        [first]="first"
+        [last]="last"
+      >
+      </app-event-chunk>
+    </ng-container>
+  </div>
+</div>

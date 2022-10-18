@@ -1,0 +1,9 @@
+<h1 class="events-time-line-header" routerLink="/">
+  Back to main page
+</h1>
+
+<p *ngIf="isLoading; else timelineTemplate">Loading...</p>
+
+<ng-template #timelineTemplate>
+  <app-events-timeline [eventsData]="eventsData"></app-events-timeline>
+</ng-template>

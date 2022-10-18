@@ -1,0 +1,14 @@
+<div
+  class="event-chunk"
+  [title]="eventTypeToTitleHintText[eventDatesToMilliseconds.type]"
+  [ngStyle]="{
+          left: ((eventDatesToMilliseconds.dateStart - eventsStartMilliseconds) / eventsTimelineLengthMilliseconds) * 100 + '%',
+          width: ((eventDatesToMilliseconds.dateEnd - eventDatesToMilliseconds.dateStart) / eventsTimelineLengthMilliseconds) * 100 + '%',
+          background: eventTypeToBackgroundColor[eventDatesToMilliseconds.type],
+          'border-top-left-radius': first ? '5px' : 'unset',
+          'border-bottom-left-radius': first ? '5px' : 'unset',
+          'border-top-right-radius': last ? '5px' : 'unset',
+          'border-bottom-right-radius': last ? '5px' : 'unset'
+        }"
+>
+</div>
